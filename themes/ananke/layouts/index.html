@@ -14,7 +14,7 @@
 
     <div class="pa3 pa4-ns w-100 w-70-ns center">
       {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
-       {{ with .Site.GetPage "section" $section_name }}
+       {{ with .Site.GetPage $section_name }}
           <h1 class="flex-none">
             {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}
           </h1>
@@ -44,7 +44,7 @@
         {{ end }}
 
         {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
-        {{ with .Site.GetPage "section" $section_name }}
+        {{ with .Site.GetPage $section_name }}
           <a href="{{ .RelPermalink }}" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">{{ i18n "allTitle" . }}</a>
         {{ end }}
         </section>
