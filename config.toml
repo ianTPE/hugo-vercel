@@ -2,3 +2,10 @@ baseURL = "https://hugo-vercel-phi.vercel.app/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "ananke"
+
+[params]
+  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+  
+  # 如果需要啟用 featured_image 到所有頁面
+  # 將這個圖片作為整個網站的默認 hero 圖片
+  # 每個頁面可以在其 front matter 中覆蓋此設置
